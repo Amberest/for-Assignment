@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript例</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">こんにちは！</h1>
+    <button onclick="changeText()">クリックして変える</button>
+    <button onclick="undoText()">クリックして戻す</button>
+    <script>
+      function changeText() {
+        document.getElementById("title").textContent =
+          "こんにちは、JavaScript！";
+      }
+      function undoText() {
+        document.getElementById("title").textContent = "こんにちは！";
+      }
+    </script>
+  </body>
+</html>
